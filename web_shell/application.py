@@ -25,4 +25,7 @@ def exec_command():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
+    # Use the following if you're upload to Elastic BeanStalk or other such container
     app.run(debug=True)
+    # Use the following for local Testing
+    # app.run(host='0.0.0.0', port=5000)
