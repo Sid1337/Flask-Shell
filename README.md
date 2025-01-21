@@ -70,9 +70,9 @@ Make changes to the Last Line as below to run on local server port 5000
 
 ```python
 # Use the following if you're upload to Elastic BeanStalk or other such container
-    # application.run(debug=True)
+    # app.run(debug=True)
     # Use the following for local Testing
-     application.run(host='0.0.0.0', port=5000)
+     app.run(host='0.0.0.0', port=5000)
 ```
 
 Then run the following command from the same folder where the application.py and requirments.txt file exist to start the Flask server with the reverse shell.
