@@ -29,4 +29,8 @@ def reverse_shell():
         return str(e), 500
 
 if __name__ == "__main__":
+    # Use the following if you're upload to Elastic BeanStalk or other such container
     application.run(debug=True)
+    # Use the following for local Testing
+    # application.run(host='0.0.0.0', port=5000)
+    
